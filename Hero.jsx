@@ -64,7 +64,7 @@ function Hero({ onTrailer, onNotify }) {
           fontFamily: 'var(--font-condensed)', fontWeight: 'var(--fw-medium)',
           textTransform: 'uppercase', letterSpacing: 'var(--tracking-widest)',
           fontSize: 'var(--text-2xs)', color: 'var(--text-muted)',
-        }}>NR &nbsp;·&nbsp; Documentary Feature &nbsp;·&nbsp; Q2 2025</span>
+        }}>Documentary Feature</span>
         <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--text-muted)' }} className="scroll-cue">
           <span style={{
             fontFamily: 'var(--font-condensed)', fontWeight: 'var(--fw-medium)',

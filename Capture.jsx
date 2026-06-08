@@ -41,7 +41,7 @@ function Capture({ onNotify }) {
               </span>
             </div>
           ) : (
-            <form onSubmit={submit} style={{ display: 'flex', gap: 10, alignItems: 'flex-end', flexWrap: 'wrap', maxWidth: 520 }}>
+            <form onSubmit={submit} className="capture-form" style={{ display: 'flex', gap: 10, alignItems: 'flex-end', flexWrap: 'wrap', maxWidth: 520 }}>
               <Input
                 type="email" placeholder="your@email.com" aria-label="Email address"
                 iconLeft={<Mail size={18} />} size="lg"

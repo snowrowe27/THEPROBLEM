@@ -37,7 +37,7 @@ function SiteFooter() {
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap' }}>
           <span style={{ fontFamily: 'var(--font-condensed)', fontWeight: 'var(--fw-medium)', textTransform: 'uppercase', letterSpacing: 'var(--tracking-widest)', fontSize: 'var(--text-2xs)', color: 'var(--text-muted)' }}>
-            NR &nbsp;·&nbsp; Documentary Feature &nbsp;·&nbsp; Q2 2025
+            Documentary Feature
           </span>
           <span style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-2xs)', color: 'var(--ink-500)' }}>
             © 2026 Fordom Studio. All rights reserved.

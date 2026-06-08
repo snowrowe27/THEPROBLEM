@@ -24,7 +24,7 @@
 
 <link rel="stylesheet" href="/styles.css" />
 <style>
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   body { margin: 0; background: var(--bg-letterbox); overflow-x: hidden; }
   #root { min-height: 100vh; }
 
@@ -55,6 +55,15 @@
   @media (max-width: 720px) {
     .turn-strip { grid-template-columns: 1fr !important; }
     .footer-grid { align-items: flex-start !important; }
+  }
+
+  /* ---- mobile polish ---- */
+  @media (max-width: 560px) {
+    /* declutter the header: drop the secondary text links, keep wordmark + CTA */
+    .nav-link { display: none !important; }
+    /* stack the email capture so the field + button are full-width, easy to tap */
+    .capture-form { flex-direction: column; align-items: stretch !important; }
+    .capture-form > * { width: 100% !important; }
   }
 </style>
 </head>
