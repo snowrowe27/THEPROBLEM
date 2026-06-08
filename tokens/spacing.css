@@ -1,0 +1,47 @@
+/* ============================================================
+   THE PROBLEM — Spacing, sizing & radii
+   8px base grid. Radii stay HARD — this brand is square-cornered,
+   poster-like, hairline-bordered. Rounding is the rare exception.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale (8px grid, with 4px half-steps) ---- */
+  --space-0:   0;
+  --space-1:   0.25rem;  /*  4px */
+  --space-2:   0.5rem;   /*  8px */
+  --space-3:   0.75rem;  /* 12px */
+  --space-4:   1rem;     /* 16px */
+  --space-5:   1.5rem;   /* 24px */
+  --space-6:   2rem;     /* 32px */
+  --space-7:   2.5rem;   /* 40px */
+  --space-8:   3rem;     /* 48px */
+  --space-10:  4rem;     /* 64px */
+  --space-12:  5rem;     /* 80px */
+  --space-16:  7rem;     /* 112px */
+  --space-20:  9rem;     /* 144px */
+  --space-24:  12rem;    /* 192px — section rhythm */
+
+  /* ---- Radii (mostly sharp) ---- */
+  --radius-none: 0;
+  --radius-xs:   2px;    /* default for chips, inputs */
+  --radius-sm:   4px;    /* cards, buttons */
+  --radius-md:   8px;
+  --radius-pill: 999px;  /* rare — toggles, avatars */
+
+  /* ---- Borders ---- */
+  --border-width: 1px;
+  --border-width-thick: 2px;
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --container-narrow: 760px;   /* editorial reading column */
+  --container-wide: 1480px;
+  --gutter: clamp(1.25rem, 5vw, 4rem); /* @kind spacing */
+
+  /* ---- Z-index ---- */
+  --z-base: 1; /* @kind other */
+  --z-sticky: 50; /* @kind other */
+  --z-overlay: 100; /* @kind other */
+  --z-modal: 200; /* @kind other */
+  --z-toast: 300; /* @kind other */
+}

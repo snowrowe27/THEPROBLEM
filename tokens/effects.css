@@ -1,0 +1,52 @@
+/* ============================================================
+   THE PROBLEM — Effects: shadows, gradients, texture, motion
+   The look: deep cinematic shadow, film grain, vignette, vertical
+   light streaks, brushed-metal wordmark fill, slow confident motion.
+   ============================================================ */
+
+:root {
+  /* ---- Shadows (deep, soft, cinematic — never candy-bright) ---- */
+  --shadow-sm:   0 1px 2px rgba(0,0,0,0.5);
+  --shadow-card: 0 12px 32px -12px rgba(0,0,0,0.75);
+  --shadow-pop:  0 28px 60px -20px rgba(0,0,0,0.85);
+  --shadow-glow-blood: 0 0 0 1px rgba(200,32,31,0.35), 0 10px 40px -8px rgba(200,32,31,0.35);
+  --shadow-inset-top: inset 0 1px 0 rgba(255,255,255,0.05);
+
+  /* ---- The wordmark fill: brushed metal, top-lit ---- */
+  --metal-fill: linear-gradient(
+    178deg,
+    var(--silver-hi) 0%,
+    var(--silver-1) 28%,
+    var(--silver-2) 52%,
+    var(--silver-3) 74%,
+    var(--silver-1) 100%
+  );
+  --metal-fill-soft: linear-gradient(180deg, #FFFFFF 0%, #C9CCD2 55%, #7E828B 100%);
+
+  /* ---- Protection gradients (legibility over photography) ---- */
+  --scrim-bottom: linear-gradient(to top, rgba(5,5,7,0.96) 0%, rgba(5,5,7,0.7) 28%, rgba(5,5,7,0) 70%); /* @kind other */
+  --scrim-top:    linear-gradient(to bottom, rgba(5,5,7,0.9) 0%, rgba(5,5,7,0) 60%); /* @kind other */
+  --scrim-left:   linear-gradient(to right, rgba(5,5,7,0.94) 0%, rgba(5,5,7,0.5) 40%, rgba(5,5,7,0) 75%); /* @kind other */
+
+  /* ---- Vignette (wraps full-bleed media) ---- */
+  --vignette: radial-gradient(120% 120% at 50% 42%, rgba(5,5,7,0) 52%, rgba(5,5,7,0.55) 100%); /* @kind other */
+
+  /* ---- Accent washes ---- */
+  --gradient-blood: linear-gradient(135deg, var(--blood-600) 0%, var(--blood-500) 60%, var(--blood-400) 100%);
+  --gradient-charcoal: linear-gradient(180deg, var(--ink-850) 0%, var(--ink-900) 100%);
+
+  /* ---- Film grain (tile-able SVG noise, ~3% alpha) ---- */
+  --grain-url: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E"); /* @kind other */
+
+  /* ---- Motion (slow, weighted, confident — no bounce) ---- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --ease-cine:   cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --dur-fast:   140ms; /* @kind other */
+  --dur-base:   240ms; /* @kind other */
+  --dur-slow:   480ms; /* @kind other */
+  --dur-cine:   900ms; /* @kind other */
+
+  /* ---- Backdrop blur ---- */
+  --blur-glass: saturate(120%) blur(14px); /* @kind other */
+}

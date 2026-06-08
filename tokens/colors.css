@@ -1,0 +1,90 @@
+/* ============================================================
+   THE PROBLEM — Color tokens
+   A cinematic, vérité documentary palette: cinema black, bone
+   highlights, boxing-red as the single loud accent, cold steel
+   for the clinical/mental-health register, gold for the belt &
+   the money motif (howtoblow40million).
+   ============================================================ */
+
+:root {
+  /* ---- Ink: cinema black → smoke (cool, near-neutral with a green-black cast) ---- */
+  --ink-1000: #050507;  /* true letterbox black */
+  --ink-900:  #0A0B0D;  /* page background */
+  --ink-850:  #101216;  /* card / elevated surface */
+  --ink-800:  #15171C;
+  --ink-700:  #1E2127;  /* raised surface, inputs */
+  --ink-600:  #2A2E36;  /* borders strong */
+  --ink-500:  #3C414B;  /* dividers, disabled fill */
+  --ink-400:  #5A606C;  /* muted text */
+  --ink-300:  #878D99;  /* secondary text */
+  --ink-200:  #B3B8C1;  /* low-emphasis on dark */
+
+  /* ---- Bone: warm off-whites (tape / mouthguard tone) ---- */
+  --bone-50:  #F5F2EC;  /* primary text on dark */
+  --bone-100: #E9E4DA;
+  --bone-200: #D8D2C4;  /* warm muted */
+  --white:    #FFFFFF;
+
+  /* ---- Blood: the loud accent (ring red, danger, the persona) ---- */
+  --blood-700: #6E0F12;
+  --blood-600: #8E1316;
+  --blood-500: #C8201F;  /* PRIMARY accent */
+  --blood-400: #E23A33;  /* hover / bright */
+  --blood-300: #F2645B;
+  --blood-tint: rgba(200, 32, 31, 0.14);  /* wash behind red elements */
+
+  /* ---- Steel: cold clinical register (MRI, hospital, the quiet) ---- */
+  --steel-600: #265863;
+  --steel-500: #357C8C;
+  --steel-400: #5AA0AE;
+  --steel-tint: rgba(53, 124, 140, 0.14);
+
+  /* ---- Gold: championship belt + the money motif ---- */
+  --gold-600: #9A7A2E;
+  --gold-500: #C7A24C;  /* counter / belt / dollar figures */
+  --gold-400: #E0C173;
+  --gold-tint: rgba(199, 162, 76, 0.14);
+
+  /* ---- Metallic silver: the wordmark fill (used as a gradient) ---- */
+  --silver-hi: #FEFEFF;
+  --silver-1:  #DADCE1;
+  --silver-2:  #A4A8B0;
+  --silver-3:  #6B6F78;
+  --silver-4:  #3E424A;
+
+  /* ============ Semantic aliases ============ */
+  --bg-letterbox:    var(--ink-1000);
+  --bg-page:         var(--ink-900);
+  --bg-elevated:     var(--ink-850);
+  --surface-card:    var(--ink-850);
+  --surface-raised:  var(--ink-700);
+  --surface-input:   var(--ink-800);
+  --surface-hover:   var(--ink-800);
+
+  --text-primary:    var(--bone-50);
+  --text-secondary:  var(--ink-300);
+  --text-muted:      var(--ink-400);
+  --text-on-accent:  var(--bone-50);
+  --text-inverse:    var(--ink-900);
+
+  --border-hairline: rgba(245, 242, 236, 0.09);
+  --border-soft:     rgba(245, 242, 236, 0.14);
+  --border-strong:   rgba(245, 242, 236, 0.24);
+  --border-accent:   var(--blood-500);
+
+  --accent:          var(--blood-500);
+  --accent-hover:    var(--blood-400);
+  --accent-press:    var(--blood-600);
+  --accent-wash:     var(--blood-tint);
+
+  --money:           var(--gold-500);
+  --money-bright:    var(--gold-400);
+  --cold:            var(--steel-500);
+
+  --focus-ring:      var(--blood-400);
+
+  /* status (kept muted, doc-grade not app-candy) */
+  --positive: #5C9E6B;
+  --warning:  var(--gold-500);
+  --danger:   var(--blood-500);
+}

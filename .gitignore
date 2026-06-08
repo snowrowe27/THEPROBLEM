@@ -1,0 +1,9 @@
+# design handoff working bundle (source of truth lives in Claude Design export)
+_design_handoff/
+
+# os / editor cruft
+.DS_Store
+*.log
+
+# claude local dev
+.claude/
